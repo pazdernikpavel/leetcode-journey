@@ -32,7 +32,6 @@ impl Solution {
     // }
 
     // Runtime 1ms (87.23% percentile), Memory 2.4MB (42.40% percentile)
-    //
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut hashmap: HashMap<i32, usize> = HashMap::with_capacity(nums.len());
         for i in 0..nums.len() {
