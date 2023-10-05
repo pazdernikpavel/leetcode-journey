@@ -1,32 +1,7 @@
-// Simple definition for singly-linked list from LeetCode.
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    pub fn new(val: i32, next: Option<Box<ListNode>>) -> Self {
-        ListNode {
-            next,
-            val,
-        }
-    }
-
-    pub fn from_vec(vec: Vec<i32>) -> Option<Box<Self>> {
-        vec.iter()
-            .rev()
-            .fold(None, |next, val| {
-                let node = Box::new(ListNode::new(*val, next));
-                Some(node)
-            })
-    }
-}
+use utils::singly_linked_list::ListNode;
 
 // Time Complexity: O(n+1/2n)
-// Space Complexity: O(1)
+// Space Complexity: O(1)w
 
 pub fn middle_node(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     let mut length = 0;

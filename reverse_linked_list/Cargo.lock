@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "middle_of_the_linked_list"
+name = "reverse_linked_list"
 version = "0.1.0"
 dependencies = [
  "utils",
