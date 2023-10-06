@@ -1,6 +1,6 @@
 use utils::singly_linked_list::ListNode;
 
-pub fn is_palindrome(mut head: Option<Box<ListNode>>) -> bool {
+pub fn is_palindrome(head: Option<Box<ListNode>>) -> bool {
     let mut list_ref = &head;
     let mut counter = 0;
     while let Some(node) = list_ref.as_ref() {
@@ -21,9 +21,6 @@ pub fn is_palindrome(mut head: Option<Box<ListNode>>) -> bool {
             prev = node;
         }
     }
-
-    println!("prev: {:?}", prev);
-    println!("next: {:?}", next);
 
     let mut head_one = Some(prev);
     let mut head_two = if counter & 1 == 0 {
