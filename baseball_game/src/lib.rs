@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 pub fn cal_points(operations: Vec<String>) -> i32 {
     let mut stack: Vec<i32> = vec![];
     for val in operations {
