@@ -44,6 +44,9 @@ use std::rc::{Rc, Weak};
 //     }
 // }
 
+// Time Complexity: O(1) - All operations
+// Space Complexity: O(n)
+
 #[derive(Debug)]
 pub struct Node {
     val: i32,
