@@ -1,5 +1,3 @@
-// TODO: https://leetcode.com/problems/design-browser-history/
-
 use std::ptr;
 
 #[derive(Debug, PartialEq, Eq)]
