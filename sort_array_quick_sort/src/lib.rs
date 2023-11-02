@@ -1,6 +1,18 @@
 // Time Complexity: O(n log n) / Worst case n * n
 // Space Complexity: O(1)
 
+///
+/// Quick sort
+///
+/// Pros:
+/// - very efficient on larger data O(n log n), similar to merge sort
+/// - do not require extra space allocation
+///
+/// Cons:
+/// - worst case can take n squared time
+/// - unstable
+///
+
 pub fn quick_sort(arr: &mut Vec<i32>, start: usize, end: usize) {
     if end - start < 1 {
         return;
